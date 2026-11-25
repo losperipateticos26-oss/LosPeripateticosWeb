@@ -2,13 +2,13 @@
    VARIABLES Y RESET
    ========================================= */
 :root {
-    --bg-dark: #121212;
-    --bg-darker: #0a0a0a;
+    --bg-dark: #ffffff;
+    --bg-darker: #f5f5f5;
     --primary-gold: #D4AF37;
     --primary-gold-hover: #b5952f;
-    --text-light: #f4f4f4;
-    --text-muted: #a0a0a0;
-    --card-bg: #1e1e1e;
+    --text-light: #000000;
+    --text-muted: #4a4a4a;
+    --card-bg: #f9f9f9;
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
     --transition: all 0.3s ease;
