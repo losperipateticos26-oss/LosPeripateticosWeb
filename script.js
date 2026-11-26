@@ -84,8 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .single();
 
         if (profileError || !profileData) {
-            alert("Error: No se encontró tu perfil en la base de datos. Contacta al administrador.");
-            return;
+            alert("Error de Supabase: " + (profileError ? profileError.message : "El perfil está vacío") );
         }
 
         currentUserRole = profileData.role;
