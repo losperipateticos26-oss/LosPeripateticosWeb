@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Peripatéticos | Academia Pre UNSAAC</title>
+    <meta name="description" content="Elige libremente, aprende comprendiendo. Academia Preuniversitaria Virtual para los Grupos C y D de la UNSAAC.">
+    <!-- Fuentes vanguardistas y elegantes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">
+                <img src="logo.png" alt="Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/50x50/0A0A0A/C19B6C?text=LP'">
+                <div class="logo-text">
+                    <span class="logo-title">Los Peripatéticos</span>
+                </div>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio">Inicio</a>
+                <a href="#filosofia">Manifiesto</a>
+                <a href="#mision">Misión</a>
+                <a href="#grupos">Grupos C y D</a>
+                <a href="#verano">Verano</a>
+                <a href="#contacto">Contacto</a>
+                <button class="btn-portal" onclick="openPortal()"><i class="fas fa-fingerprint"></i> Aula Virtual</button>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="badge"><span class="dot"></span> Academia Virtual Pre-UNSAAC</div>
+                <h1 class="main-title">
+                    <span class="italic-gold">Libere elige,</span><br>
+                    intellegendo disce.
+                </h1>
+                <p class="slogan-translation">Elige libremente, aprende comprendiendo.</p>
+                <p class="hero-desc">No formamos repetidores mecánicos. Formamos estudiantes que comprenden, cuestionan y asumen la responsabilidad de su propio pensamiento.</p>
+                <div class="hero-buttons">
+                    <a href="#filosofia" class="btn-primary">Leer el Manifiesto</a>
+                    <button onclick="openPortal()" class="btn-outline"><i class="fas fa-sign-in-alt"></i> Portal Académico</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="image-container">
+                    <img src="logo.png" alt="Búho Los Peripatéticos" class="main-logo" onerror="this.src='https://via.placeholder.com/500x500/FFFFFF/0A0A0A?text=Los+Peripateticos'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filosofía / Manifiesto -->
+    <section id="filosofia" class="section bg-dark">
+        <div class="container">
+            <div class="section-header-dark">
+                <span class="subtitle-gold">Nuestra Filosofía</span>
+                <h2 class="title-large">El arte de <span class="italic-gold">comprender</span></h2>
+            </div>
+            
+            <div class="manifesto-intro">
+                <p class="lead-text">Los Peripatéticos es una academia virtual especializada en la preparación para la UNSAAC (Grupos C y D). Nuestro propósito no es convertir a los postulantes en repetidores mecánicos de datos, sino formar estudiantes que comprendan lo que estudian, asuman sus decisiones y disfruten el proceso de pensar.</p>
+            </div>
+
+            <div class="philosophy-grid">
+                <!-- Sartre -->
+                <div class="phil-card">
+                    <div class="phil-number">01</div>
+                    <h3>Libertad y Elección</h3>
+                    <p class="phil-author">Inspirado en Jean-Paul Sartre</p>
+                    <p>Antes de reflexionar, ya hemos recibido nombres, etiquetas y verdades heredadas. Te invitamos a cuestionar lo aprendido de forma superficial, a no conformarte con repetir fórmulas ajenas y a asumir que tu libertad implica elegir y responder por lo que haces.</p>
+                </div>
+                <!-- Kierkegaard -->
+                <div class="phil-card">
+                    <div class="phil-number">02</div>
+                    <h3>El Vértigo de Aprender</h3>
+                    <p class="phil-author">Inspirado en Søren Kierkegaard</p>
+                    <p>Sabemos que elegir y hacerse responsable genera vértigo y miedo. Por eso no escondemos esa dificultad, sino que acompañamos al estudiante para que enfrente sus decisiones con claridad y criterio propio.</p>
+                </div>
+                <!-- Zizek -->
+                <div class="phil-card">
+                    <div class="phil-number">03</div>
+                    <h3>Realidad y Contradicción</h3>
+                    <p class="phil-author">Inspirado en Slavoj Žižek</p>
+                    <p>El aprendizaje real no es un escenario perfecto. Las dudas, los errores y las contradicciones forman parte del camino. Aceptar la realidad tal como es permite trabajar con honestidad, sin idealizaciones falsas ni vergüenza por equivocarse.</p>
+                </div>
+                <!-- Plotino -->
+                <div class="phil-card">
+                    <div class="phil-number">04</div>
+                    <h3>La Belleza de Entender</h3>
+                    <p class="phil-author">Inspirado en Plotino</p>
+                    <p>La belleza más duradera no está en la apariencia, sino en el orden interno. Cuando un estudiante deja de memorizar a ciegas y logra entender la estructura y la lógica de una idea, aparece el genuino gusto de comprender por sí mismo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section id="mision" class="section bg-light">
+        <div class="container mission-container">
+            <div class="mission-box">
+                <i class="fas fa-crosshairs mission-icon"></i>
+                <h3>Misión</h3>
+                <p>Preparar de manera virtual, rigurosa y humana a los postulantes a los Grupos C y D de la UNSAAC, promoviendo la comprensión profunda, el pensamiento crítico y la responsabilidad personal frente al estudio, en un entorno claro, cercano y estimulante que priorice el entendimiento real sobre la memorización mecánica.</p>
+            </div>
+            <div class="mission-box">
+                <i class="fas fa-eye mission-icon"></i>
+                <h3>Visión</h3>
+                <p>Consolidarnos como una academia virtual referente en la preparación para los Grupos C y D de la UNSAAC, reconocida por formar postulantes autónomos, críticos y seguros de sus decisiones, que abordan el conocimiento con rigor académico, honestidad intelectual y genuino disfrute por aprender.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grupos C y D -->
+    <section id="grupos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Especialización</span>
+                <h2 class="title-large">Estructura de Grupos</h2>
+            </div>
+            <div class="groups-grid">
+                <div class="group-card">
+                    <div class="group-header">
+                        <h3>Grupo C</h3>
+                        <span class="tag">Ciencias Empresariales</span>
+                    </div>
+                    <p><strong>Carreras:</strong> Administración, Contabilidad, Economía y Turismo.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Competencia Comunicativa</li>
+                        <li><i class="fas fa-check"></i> Aritmética y Álgebra</li>
+                        <li><i class="fas fa-check"></i> Historia, Geografía y Economía</li>
+                        <li><i class="fas fa-check"></i> Educación Cívica</li>
+                    </ul>
+                </div>
+                <div class="group-card">
+                    <div class="group-header">
+                        <h3>Grupo D</h3>
+                        <span class="tag">Ciencias Sociales</span>
+                    </div>
+                    <p><strong>Carreras:</strong> Derecho, Historia, Comunicación, Psicología, Filosofía y Educación.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Competencia Comunicativa</li>
+                        <li><i class="fas fa-check"></i> Aritmética y Álgebra</li>
+                        <li><i class="fas fa-check"></i> Historia y Geografía</li>
+                        <li><i class="fas fa-check"></i> Filosofía y Lógica</li>
+                        <li><i class="fas fa-check"></i> Educación Cívica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ciclo Verano -->
+    <section id="verano" class="section bg-dark">
+        <div class="container">
+            <div class="summer-wrapper">
+                <div class="summer-content">
+                    <span class="subtitle-gold">Ciclo de Apertura</span>
+                    <h2 class="title-large">Verano <span class="italic-gold">2025</span></h2>
+                    <p class="summer-desc">Inicia tu camino con propósito. Clases de Lunes a Domingo bajo nuestra metodología de comprensión profunda.</p>
+                    
+                    <div class="summer-info-grid">
+                        <div class="info-block">
+                            <span class="label">Inicio</span>
+                            <span class="value">11 de Enero</span>
+                        </div>
+                        <div class="info-block">
+                            <span class="label">Horario</span>
+                            <span class="value">20:00 - 22:00</span>
+                        </div>
+                        <div class="info-block">
+                            <span class="label">Duración</span>
+                            <span class="value">2 Meses</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="summer-pricing">
+                    <div class="price-box">
+                        <span class="price-label">Inversión del Ciclo</span>
+                        <div class="price"><span class="currency">S/</span> 120<span class="cents">.00</span></div>
+                        <span class="price-sub">Hora adicional o repaso: S/ 1.00</span>
+                        <a href="#contacto" class="btn-primary btn-full mt-3">Asegurar mi Vacante</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section bg-light">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <span class="subtitle">Atención Personalizada</span>
+                <h2 class="title-large">Inicia el diálogo.</h2>
+                <p>Completa el formulario y un asesor académico se comunicará contigo para brindarte información sobre matrículas y acceso a la plataforma.</p>
+                
+                <div class="contact-methods">
+                    <a href="tel:+51944565542" class="contact-link">
+                        <i class="fab fa-whatsapp"></i> 944 565 542
+                    </a>
+                    <a href="mailto:losperipateticos26@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> losperipateticos26@gmail.com
+                    </a>
+                    <a href="#" class="contact-link">
+                        <i class="fab fa-facebook-f"></i> Academia Los Peripatéticos
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <form id="leadForm" class="contact-form">
+                    <div class="input-group">
+                        <label>Nombre Completo</label>
+                        <input type="text" id="name" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Celular</label>
+                            <input type="tel" id="phone" required placeholder="999 999 999">
+                        </div>
+                        <div class="input-group">
+                            <label>Grupo de Interés</label>
+                            <select id="group">
+                                <option value="Grupo C">Grupo C</option>
+                                <option value="Grupo D">Grupo D</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Correo Electrónico</label>
+                        <input type="email" id="email" required placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Consulta (Opcional)</label>
+                        <textarea id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Enviar Mensaje <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>Los Peripatéticos</h3>
+                <p>Academia Preuniversitaria UNSAAC</p>
+            </div>
+            <p class="footer-copy">&copy; 2025 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/51944565542" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- Portal Modal -->
+    <div id="portalModal" class="portal-modal">
+        <div class="portal-content">
+            <div id="loginView" class="portal-view active">
+                <div class="login-header">
+                    <h2>Aula Virtual</h2>
+                    <p>Ingresa tus credenciales académicas</p>
+                </div>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label>Correo Electrónico</label>
+                        <input type="email" id="loginUser" required placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Contraseña</label>
+                        <input type="password" id="loginPass" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Ingresar al Sistema</button>
+                    <p class="login-error" id="loginError">Credenciales incorrectas.</p>
+                </form>
+                <button class="close-portal" onclick="closePortal()">Volver a la web</button>
+            </div>
+
+            <div id="dashboardView" class="portal-view">
+                <div class="dashboard-header">
+                    <div class="user-info">
+                        <h3 id="userNameDisplay">Nombre</h3>
+                        <span id="userRoleDisplay" class="role-badge">Rol</span>
+                    </div>
+                    <button class="btn-logout" onclick="logout()">Cerrar Sesión</button>
+                </div>
+                
+                <div class="dashboard-body">
+                    <!-- Admin -->
+                    <div id="adminPanel" class="role-panel">
+                        <h4>Administración General</h4>
+                        <div class="panel-card">
+                            <h5>Registrar Nuevo Usuario</h5>
+                            <form id="createUserForm">
+                                <div class="input-row">
+                                    <div class="input-group"><label>Rol</label><select id="newRole" required><option value="student">Estudiante</option><option value="teacher">Docente</option></select></div>
+                                    <div class="input-group"><label>Nombre Completo</label><input type="text" id="newName" required></div>
+                                </div>
+                                <div class="input-row">
+                                    <div class="input-group"><label>Correo Electrónico</label><input type="email" id="newEmail" required></div>
+                                    <div class="input-group"><label>Contraseña</label><input type="text" id="newPass" required value="123456"></div>
+                                </div>
+                                <button type="submit" class="btn-primary">Registrar Usuario</button>
+                            </form>
+                        </div>
+                        <div class="panel-card mt-3">
+                            <h5>Usuarios Activos</h5>
+                            <table class="data-table" id="usersTable"><thead><tr><th>Rol</th><th>Correo</th><th>Nombre</th></tr></thead><tbody></tbody></table>
+                        </div>
+                    </div>
+
+                    <!-- Docente -->
+                    <div id="teacherPanel" class="role-panel" style="display:none;">
+                        <h4>Panel Docente</h4>
+                        <div class="panel-card">
+                            <h5>Subir Material</h5>
+                            <form id="uploadMaterialForm">
+                                <div class="input-group"><label>Título del Material</label><input type="text" id="matTitle" required></div>
+                                <div class="input-group"><label>Tipo de Recurso</label><select id="matType" required><option value="link">Enlace de Clase</option><option value="pdf">Documento PDF</option></select></div>
+                                <div class="input-group"><label>URL del Recurso</label><input type="url" id="matUrl" required placeholder="https://..."></div>
+                                <button type="submit" class="btn-primary">Publicar Material</button>
+                            </form>
+                        </div>
+                        <div class="panel-card mt-3">
+                            <h5>Materiales Publicados</h5>
+                            <div id="teacherMaterialsList" class="materials-list"></div>
+                        </div>
+                    </div>
+
+                    <!-- Estudiante -->
+                    <div id="studentPanel" class="role-panel" style="display:none;">
+                        <h4>Mi Aula</h4>
+                        <div class="panel-card">
+                            <h5>Materiales de Estudio</h5>
+                            <div id="studentMaterialsList" class="materials-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
